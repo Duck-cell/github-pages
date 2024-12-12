@@ -1,37 +1,133 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žaislai Puikiai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ffcc00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 50px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .product h3 {
+            font-size: 20px;
+            padding: 10px;
+        }
+        .product p {
+            color: #666;
+            padding: 0 10px 10px;
+        }
+        .product button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #e6b800;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Žaislai Puikiai</h1>
+        <p>Geriausi vaikiški žaislai jūsų mažyliams!</p>
+    </header>
+    <nav>
+        <a href="#">Pradžia</a>
+        <a href="#">Produktai</a>
+        <a href="#">Apie mus</a>
+        <a href="#">Kontaktai</a>
+    </nav>
+    <section class="hero">
+        <h1>Sveiki atvykę į Žaislai Puikiai!</h1>
+        <p>Kur vaikų svajonės tampa realybe.</p>
+    </section>
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Plush Toy">
+            <h3>Minkštas žaislas</h3>
+            <p>Kaina: 15 EUR</p>
+            <button>Į krepšelį</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Building Blocks">
+            <h3>Konstruktorius</h3>
+            <p>Kaina: 25 EUR</p>
+            <button>Į krepšelį</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Puzzle">
+            <h3>Dėlionė</h3>
+            <p>Kaina: 10 EUR</p>
+            <button>Į krepšelį</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Žaislai Puikiai. Visos teisės saugomos.</p>
+    </footer>
+</body>
+</html>
